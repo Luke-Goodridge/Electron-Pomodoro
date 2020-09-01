@@ -2,7 +2,7 @@
   "name": "electron-pomodoro",
   "version": "1.0.0",
   "description": "Pomodoro using electron",
-  "main": "index.js",
+  "main": "main.js",
   "dependencies": {
     "electron": "^10.1.1"
   },
