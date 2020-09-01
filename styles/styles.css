@@ -13,10 +13,24 @@ body {
   flex-direction: row;
   width: 100%;
   height: 100vh;
-  background-color: cornflowerblue;
+  background-color: #ed8185;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#pomo-container img {
+  margin: 0.4rem;
 }
 
 .pomo-btn {
   margin: 1rem;
-  width: 4rem;
+  font-size: 2rem;
+  width: 6rem;
+  background-color: #c83c51;
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.pomo-btn:focus {
+  outline: none;
 }

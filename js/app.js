@@ -9,6 +9,8 @@ const formatToTime = (value) => {
 };
 
 const initialValue = 900;
+const beginTimerText = "Start";
+const pauseTimerText = "Pause";
 let isPaused = true;
 let timerValue = initialValue;
 //tracks the paused value
@@ -22,7 +24,6 @@ const notify = () => {
     timeout: 3000,
     onClick: () => {
       window.focus();
-      this.close();
     },
   });
 };
@@ -30,13 +31,13 @@ const pauseBtn = document.querySelector("#pause");
 const resetBtn = document.querySelector("#reset");
 
 timer.innerHTML = formatToTime(initialValue);
-pauseBtn.innerHTML = "Start";
+pauseBtn.innerHTML = beginTimerText;
 pauseBtn.addEventListener("click", () => {
   if (isPaused) {
-    pauseBtn.innerHTML = "Pause";
+    pauseBtn.innerHTML = pauseTimerText;
     startTimer(pausedTime);
   } else {
-    pauseBtn.innerHTML = "Start";
+    pauseBtn.innerHTML = beginTimerText;
     pauseTimer();
   }
   isPaused = !isPaused;
@@ -63,7 +64,7 @@ const resetTimer = () => {
   timerValue = initialValue;
   clearInterval(currentTimer);
   isPaused = true;
-  pauseBtn.innerHTML = "Play";
+  pauseBtn.innerHTML = beginTimerText;
   timer.innerHTML = formatToTime(timerValue);
 };
 
