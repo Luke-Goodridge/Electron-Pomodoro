@@ -8,7 +8,7 @@ const formatToTime = (value) => {
   return minutes + ":" + seconds;
 };
 
-const initialValue = 900;
+const initialValue = 2;
 const beginTimerText = "Start";
 const pauseTimerText = "Pause";
 let isPaused = true;
@@ -21,6 +21,7 @@ let currentTimer;
 const notify = () => {
   Push.create("Pomodoro", {
     body: "Time is up!",
+    icon: "./images/tomato.png",
     timeout: 3000,
     onClick: () => {
       window.focus();
