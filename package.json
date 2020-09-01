@@ -4,7 +4,8 @@
   "description": "Pomodoro using electron",
   "main": "main.js",
   "dependencies": {
-    "electron": "^10.1.1"
+    "electron": "^10.1.1",
+    "push.js": "^1.0.12"
   },
   "devDependencies": {},
   "scripts": {
