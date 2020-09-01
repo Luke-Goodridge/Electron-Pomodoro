@@ -8,7 +8,7 @@ const formatToTime = (value) => {
   return minutes + ":" + seconds;
 };
 
-const initialValue = 2;
+const initialValue = 1500;
 const beginTimerText = "Start";
 const pauseTimerText = "Pause";
 let isPaused = true;
@@ -36,7 +36,7 @@ pauseBtn.innerHTML = beginTimerText;
 pauseBtn.addEventListener("click", () => {
   if (isPaused) {
     pauseBtn.innerHTML = pauseTimerText;
-    startTimer(pausedTime);
+    startTimer();
   } else {
     pauseBtn.innerHTML = beginTimerText;
     pauseTimer();
