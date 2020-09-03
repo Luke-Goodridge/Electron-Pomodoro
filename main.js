@@ -5,16 +5,17 @@ function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
     width: 450,
-    height: 800,
+    height: 200,
     webPreferences: {
       nodeIntegration: true,
     },
     resizable: false,
+    icon: "images/tomato.png",
   });
 
   // and load the index.html of the app.
   win.loadFile("index.html");
-
+  win.removeMenu();
   // Open the DevTools.
   win.webContents.openDevTools();
 }
