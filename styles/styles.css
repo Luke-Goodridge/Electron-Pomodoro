@@ -34,3 +34,19 @@ body {
 .pomo-btn:focus {
   outline: none;
 }
+
+.pomo-btn.short-btn,
+.pomo-btn.long-btn {
+  position: absolute;
+  font-size: medium;
+  width: auto;
+}
+
+.long-btn {
+  left: 3rem;
+  bottom: 0;
+}
+.short-btn {
+  left: 10rem;
+  bottom: 0;
+}
