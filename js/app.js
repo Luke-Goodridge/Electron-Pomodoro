@@ -30,6 +30,8 @@ const notify = () => {
 };
 const pauseBtn = document.querySelector("#pause");
 const resetBtn = document.querySelector("#reset");
+const longBreakBtn = document.querySelector("#reset");
+const shortBreakBtn = document.querySelector("#reset");
 
 timer.innerHTML = formatToTime(initialValue);
 pauseBtn.innerHTML = beginTimerText;
